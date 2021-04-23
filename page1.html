@@ -1,0 +1,101 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+  
+  <style>
+
+  *{
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.35s linear;
+  font-family: sans-serif;
+  
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #242424;
+}
+h1{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top:20%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    columns: #ddd;
+    font-size: 5em;
+    letter-spacing: 0.2em;
+    color: plum;
+
+}
+h1:before{
+    content: '';
+    background: linear-gradient(90deg, transparent 0%, #0000, 100%);
+}
+h1 span{
+    opacity: 0;
+    display:inline-block;
+    animation: animate 1s linear forwards;
+    
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0);
+    }
+    
+}
+
+a{
+  padding: 16px 48px;
+  border: 3px solid;
+  border-radius: 48px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: plum;
+  text-decoration: none;
+}
+a:hover{
+  transform: scale(1.04);
+  
+}
+
+a span{
+  font-weight: normal;
+}
+  
+  </style>
+</head>
+
+<body>
+   
+  <h1>
+      <span>W</span>
+      <span>E</span>
+      <span>L</span>
+      <span>C</span>
+      <span>O</span>
+      <span>M</span>
+      <span>E</span>
+  </h1>
+  
+      <a href="index.html">
+    <span>Start Now</span>
+      </a>
+</body>
+</html>
